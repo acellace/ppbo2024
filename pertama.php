@@ -4,7 +4,7 @@ $nama = readline('Masukkan nama Anda: ');
 $waktu = date('H');
 $jam = date('H:i');
 
-//echo "Halo {$nama} sekarang pukul {$waktu}";
+// echo "Halo {$nama} sekarang pukul {$waktu}";
 
 if ($waktu>=5){
     echo "Selamat pagi, {$nama} sekarang pukul {$jam}";
