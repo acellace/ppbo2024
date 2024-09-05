@@ -4,16 +4,13 @@ class Lingkaran
 {
     const PHI = 3.14;
     public $jari_jari;
-
     public function luas() : float {
         return self::PHI*$this->jari_jari*$this->jari_jari;
     }
-
     public function keliling() : float {
         return 2*self::PHI*$this->jari_jari;
     }
 }
-
 
 class Bola
 {
@@ -23,7 +20,6 @@ class Bola
         return (4/3)*self::PHI*pow($this->jari_jari,3);
     }
 }
-
 
 class Tabung
 {
@@ -35,7 +31,6 @@ class Tabung
     }
 }
 
-
 class Kerucut
 {
     const PHI = 3.14;
@@ -46,35 +41,33 @@ class Kerucut
     }
 }
 
+
 $lingkaran = new Lingkaran();
-$lingkaran->jari_jari = 7;
+$lingkaran->jari_jari = 4;
 $luas_lingkaran = $lingkaran->luas();
 $keliling_lingkaran = $lingkaran->keliling();
 echo "Luas lingkaran : {$luas_lingkaran} cm\n";
 echo "Keliling lingkaran : {$keliling_lingkaran} cm\n";
 
-
 $bola = new Bola();
-$bola->jari_jari = 7;
+$bola->jari_jari = 4;
 $volume_bola = $bola->volume();
 echo "Volume bola : {$volume_bola} cm^3\n";
 
-
 $tabung = new Tabung();
-$tabung->jari_jari = 7;
+$tabung->jari_jari = 4;
 $tabung->tinggi = 10;
 $volume_tabung = $tabung->volume();
 echo "Volume tabung : {$volume_tabung} cm^3\n";
 
 $kerucut = new Kerucut();
-$kerucut->jari_jari = 7;
+$kerucut->jari_jari = 4;
 $kerucut -> tinggi = 10;
 $volume_kerucut = $kerucut->volume(10); 
 echo "Volume kerucut : {$volume_kerucut} cm^3\n";
-
 
 $nasi_tumpeng = new Kerucut();
 $nasi_tumpeng->jari_jari = 4;
 $nasi_tumpeng->tinggi = 10;
 $volume_nasi_tumpeng = $nasi_tumpeng->volume();
-echo "Volume nasi tumpeng : {$volume_nasi_tumpeng} cm^3 \n"; 
+echo "Volume nasi tumpeng : {$volume_nasi_tumpeng} cm^3 \n";
