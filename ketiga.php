@@ -77,4 +77,4 @@ $nasi_tumpeng = new Kerucut();
 $nasi_tumpeng->jari_jari = 4;
 $nasi_tumpeng->tinggi = 10;
 $volume_nasi_tumpeng = $nasi_tumpeng->volume();
-echo "Volume nasi tumpeng : {$volume_nasi_tumpeng} \n"; 
+echo "Volume nasi tumpeng : {$volume_nasi_tumpeng} cm^3 \n"; 
