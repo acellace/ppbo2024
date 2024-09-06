@@ -23,4 +23,26 @@ class Book
         $this->publisher = $publisher;
     }
 
+    public function showAll()
+    {
+        return [
+            "ISBN" => $this->ISBN,
+            "Title" => $this->title,
+            "Description" => $this->description,
+            "Category" => $this->category,
+            "Language" => $this->language,
+            "Number of Pages" => $this->numberOfPage,
+            "Author" => $this->author->show('name'),
+            "Publisher" => $this->publisher->name
+        ];
+    }
+
+    public function detail($ISBN)
+    {
+        if ($this->ISBN == $ISBN) {
+            return $this->showAll();
+        } else {
+            return "Buku dengan ISBN $ISBN tidak ditemukan.";
+        }
+    }
 }
