@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Model\Shape;
+
 class Lingkaran
 {
     const PHI = 3.14;
