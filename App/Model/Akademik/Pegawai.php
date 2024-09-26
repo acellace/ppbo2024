@@ -24,4 +24,5 @@ class Pegawai {
         $this->no_hp = $newNoHp;
     }
 }
+
 ?>

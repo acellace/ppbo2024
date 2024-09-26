@@ -11,4 +11,6 @@ $dian->setNoHp(62111111);
 $dian->alamat = 'Jln Purnama';
 $dian->nidn = '1000121184001';
 $dian->mengajar();
+$dian->getNoHp()
+
 ?>
